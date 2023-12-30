@@ -55,7 +55,7 @@ class themeProvider extends ChangeNotifier {
   }
 
   void _updateColors() {
-    if (_isDarkTheme) {
+    if (!_isDarkTheme) {
       _white = hexToColor("#FFFFFF");
       _black = hexToColor("#000000");
       _peach = hexToColor("#F07E63");
@@ -70,7 +70,7 @@ class themeProvider extends ChangeNotifier {
       _white = hexToColor("#000000");
       _black = hexToColor("#FFFFFF");
       _peach = hexToColor("#F07E63");
-      _fawn = hexToColor("#F0EDE8");
+      _fawn = hexToColor("#000000");
       _yellow = hexToColor("#FAB677");
       _neutral = hexToColor("#757C86");
       _blue = hexToColor("#ACBEEE");
